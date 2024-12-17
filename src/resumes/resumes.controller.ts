@@ -11,7 +11,7 @@ import { ApiTags } from '@nestjs/swagger';
 export class ResumesController {
   constructor(private readonly resumesService: ResumesService) { }
 
-  @Public()
+  
   @Post()
   @ResponseMessage("Create a new resume")
   create(@Body() createUserCvDto: CreateUserCvDto, @User() user: IUser) {
